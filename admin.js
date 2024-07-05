@@ -15,7 +15,7 @@ const db = new pg.Client({
   db.connect();
 
 const app = express();
-const port = process.env.BACKPORT;
+const port = process.env.BACKPORT || 3000
 const key = process.env.API_KEY;
 
 
